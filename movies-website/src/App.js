@@ -143,7 +143,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    // this.getPopularMovies();
+    this.getPopularMovies();
   }
 
   render() {
@@ -179,11 +179,11 @@ class App extends Component {
   }
 
   updateMovieHoverState(id, isHovered) {
-    // this.setState(prevState => ({
-    //   movies: prevState.movies.map(movie =>
-    //     movie.imdbID === id ? { ...movie, isHovered } : movie
-    //   ),
-    // }));
+    this.setState(prevState => ({
+      movies: prevState.movies.map(movie =>
+        movie.imdbID === id ? { ...movie, isHovered } : movie
+      ),
+    }));
   }
 }
 
