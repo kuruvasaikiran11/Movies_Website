@@ -171,11 +171,11 @@ class App extends Component {
   }
 
   handleMouseEnter(id) {
-    // this.updateMovieHoverState(id, true);
+    this.updateMovieHoverState(id, true);
   }
 
   handleMouseLeave(id) {
-    // this.updateMovieHoverState(id, false);
+    this.updateMovieHoverState(id, false);
   }
 
   updateMovieHoverState(id, isHovered) {
