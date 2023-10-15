@@ -36,3 +36,34 @@
     transform: rotate(360deg);
   }
 }
+
+/* Hover Effect */
+.movie {
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.movie:hover {
+  transform: scale(1.05);
+}
+
+.movie .movie__title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 8px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.2s;
+}
+
+.movie:hover .movie__title {
+  visibility: visible;
+  opacity: 1;
+}
